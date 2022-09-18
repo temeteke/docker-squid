@@ -6,7 +6,7 @@ rm -rf /var/cache/squid/ssl_db
 chown squid:squid -R /var/cache/squid
 
 if [ ! -d /var/cache/squid/00 ]; then
-	squid -z
+	squid -zN
 fi
 
 exec squid -N
